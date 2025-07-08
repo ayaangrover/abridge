@@ -30,7 +30,7 @@ app.post('/summarize', async (req, res) => {
         messages: [
           {
             role: "user",
-            content: `Summarize this webpage content in 5 concise bullet points WITHOUT SAYING "HERE ARE THE BULLET POINTS" please:\n\n${content}`
+            content: `Summarize this webpage content in concise bullet points WITHOUT SAYING "HERE ARE THE BULLET POINTS" OR "HERE IS THE SUMMARIZED CONTENT" please:\n\n${content}`
           }
         ],
         temperature: 0.5,
